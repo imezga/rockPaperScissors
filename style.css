@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.results {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#you,
+#computer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+#you h1 {
+    margin-right: .5em;
+}
+
+#computer h1 {
+    margin-left: .5em;
+}
+
+#your-counter,
+#computer-counter {
+    font-size: 2em;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-size: 8em;
+    padding: 1em;
+}
+
+.choices>div {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.choices>div:hover {
+    transform: scale(1.2);
+}
+
+#result-text {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
